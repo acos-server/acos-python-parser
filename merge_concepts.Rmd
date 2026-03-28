@@ -1,0 +1,45 @@
+---
+title: "merge_contents"
+output: html_document
+date: "2024-08-06"
+---
+
+```{r}
+library(tidyverse)
+```
+
+
+```{r}
+textbook <- read.csv('smart_learning_content_section.csv')
+
+textbook <- textbook[c('section_id','concept')]
+
+textbook
+```
+
+
+```{r}
+quizpet <- read.csv('smart_learning_content_concepts_quizpet.csv')
+
+quizpet <- quizpet[c('content_name','component_name')]
+
+quizpet$concept <- quizpet$component_name
+quizpet <- quizpet[c('content_name','concept')]
+
+quizpet
+```
+
+
+```{r}
+content_name_urls <- read.csv('./readingmirror-data-files/smart_learning_content.csv')
+
+content_name_urls <- content_name_urls[c('content_name','display_name','url')]
+
+
+content_name_urls
+```
+
+
+
+
+

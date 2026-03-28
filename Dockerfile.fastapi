@@ -1,0 +1,11 @@
+FROM python:3.9.22
+
+WORKDIR /python-parser
+
+COPY ./requirements.txt /python-parser/requirements.txt
+
+RUN pip install --progress-bar off --no-cache-dir --upgrade -r /python-parser/requirements.txt
+
+COPY ./ /python-parser/
+
+CMD ["fastapi", "run", "/python-parser/main_api.py", "--port", "13456"]

@@ -1,0 +1,13 @@
+FROM python:3.9-slim
+
+WORKDIR /python-parser
+
+COPY ./ /python-parser
+
+RUN pip install --progress-bar off --no-cache-dir --upgrade -r /python-parser/requirements.txt
+
+EXPOSE 13457
+
+HEALTHCHECK CMD curl --fail http://localhost:13457/_stcore/health
+
+ENTRYPOINT ["streamlit", "run", "/python-parser/streamlit_main.py", "--server.port=13457", "--server.address=0.0.0.0"]

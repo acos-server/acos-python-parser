@@ -1,0 +1,758 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/arunb/ontologies/2024/3/python.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/arunb/ontologies/2024/3/python.owl">
+    <Prefix name="" IRI="http://www.semanticweb.org/arunb/ontologies/2024/3/python.owl/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Add"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#And"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ArithmeticExpression"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Assert"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Assign"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AssignmentStatement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Attribute"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AugAssign"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BinaryOperator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BitAnd"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BitOr"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BitShiftExpression"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BitXor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BitwiseExpression"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BooleanExpression"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BooleanType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Break"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BuiltInType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bytes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Call"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CallExpression"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ClassDef"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CollectionType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CompanionExpression"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ComprehensionExpression"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConditionalExpression"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Continue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Data"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DefinitionStatement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Delete"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dict"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DictComp"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Div"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Eq"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExceptionHandlingStatement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Expr"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Expression"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#False"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Float"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FloorDiv"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#For"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FunctionDef"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GeneratorExp"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GeneratorExpression"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Global"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gt"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GtEq"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#If"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IfExp"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Import"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ImportFrom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ImportStatement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#In"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Index"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Int"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Invert"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Is"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IsNot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IterationStatement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#JumpStatement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LShift"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#List"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ListComp"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LogicalExpression"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lt"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LtEq"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mod"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mult"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NameContentType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#None"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nonlocal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Not"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NotEq"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NotIn"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NumberType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Or"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OtherExpression"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OtherStatement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pass"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Python"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PythonLanguage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Raise"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Return"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rshift"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SelectionStatement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Set"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SetComp"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SimpleType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Slice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Starred"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Statement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Str"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sub"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SubscriptExpression"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#True"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Try"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tuple"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UAdd"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#USub"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UnaryOperator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Value"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#While"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#With"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Yield"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#YieldFrom"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Add"/>
+        <Class IRI="#BinaryOperator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#And"/>
+        <Class IRI="#BooleanExpression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ArithmeticExpression"/>
+        <Class IRI="#Expression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Assert"/>
+        <Class IRI="#ExceptionHandlingStatement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Assign"/>
+        <Class IRI="#AssignmentStatement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AssignmentStatement"/>
+        <Class IRI="#Statement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Attribute"/>
+        <Class IRI="#OtherExpression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AugAssign"/>
+        <Class IRI="#AssignmentStatement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BinaryOperator"/>
+        <Class IRI="#ArithmeticExpression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BitAnd"/>
+        <Class IRI="#BitwiseExpression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BitOr"/>
+        <Class IRI="#BitwiseExpression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BitShiftExpression"/>
+        <Class IRI="#Expression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BitXor"/>
+        <Class IRI="#BitwiseExpression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BitwiseExpression"/>
+        <Class IRI="#Expression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BooleanExpression"/>
+        <Class IRI="#LogicalExpression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BooleanType"/>
+        <Class IRI="#NameContentType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Break"/>
+        <Class IRI="#JumpStatement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BuiltInType"/>
+        <Class IRI="#Value"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bytes"/>
+        <Class IRI="#SimpleType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Call"/>
+        <Class IRI="#CallExpression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CallExpression"/>
+        <Class IRI="#Expression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ClassDef"/>
+        <Class IRI="#DefinitionStatement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CollectionType"/>
+        <Class IRI="#BuiltInType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompanionExpression"/>
+        <Class IRI="#LogicalExpression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ComprehensionExpression"/>
+        <Class IRI="#Expression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConditionalExpression"/>
+        <Class IRI="#Expression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Continue"/>
+        <Class IRI="#JumpStatement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Data"/>
+        <Class IRI="#PythonLanguage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DefinitionStatement"/>
+        <Class IRI="#Statement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Delete"/>
+        <Class IRI="#OtherStatement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dict"/>
+        <Class IRI="#CollectionType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DictComp"/>
+        <Class IRI="#ComprehensionExpression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Div"/>
+        <Class IRI="#BinaryOperator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Eq"/>
+        <Class IRI="#CompanionExpression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExceptionHandlingStatement"/>
+        <Class IRI="#Statement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Expr"/>
+        <Class IRI="#OtherStatement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Expression"/>
+        <Class IRI="#PythonLanguage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#False"/>
+        <Class IRI="#BooleanType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Float"/>
+        <Class IRI="#NumberType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FloorDiv"/>
+        <Class IRI="#BinaryOperator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#For"/>
+        <Class IRI="#IterationStatement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FunctionDef"/>
+        <Class IRI="#DefinitionStatement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GeneratorExp"/>
+        <Class IRI="#GeneratorExpression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GeneratorExpression"/>
+        <Class IRI="#Expression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Global"/>
+        <Class IRI="#OtherStatement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gt"/>
+        <Class IRI="#CompanionExpression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GtEq"/>
+        <Class IRI="#CompanionExpression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#If"/>
+        <Class IRI="#SelectionStatement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IfExp"/>
+        <Class IRI="#ConditionalExpression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Import"/>
+        <Class IRI="#ImportStatement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ImportFrom"/>
+        <Class IRI="#ImportStatement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ImportStatement"/>
+        <Class IRI="#Statement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#In"/>
+        <Class IRI="#CompanionExpression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Index"/>
+        <Class IRI="#SubscriptExpression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Int"/>
+        <Class IRI="#NumberType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Invert"/>
+        <Class IRI="#UnaryOperator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Is"/>
+        <Class IRI="#CompanionExpression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IsNot"/>
+        <Class IRI="#CompanionExpression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IterationStatement"/>
+        <Class IRI="#Statement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JumpStatement"/>
+        <Class IRI="#Statement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LShift"/>
+        <Class IRI="#BitShiftExpression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#List"/>
+        <Class IRI="#CollectionType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ListComp"/>
+        <Class IRI="#ComprehensionExpression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LogicalExpression"/>
+        <Class IRI="#Expression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lt"/>
+        <Class IRI="#CompanionExpression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LtEq"/>
+        <Class IRI="#CompanionExpression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mod"/>
+        <Class IRI="#BinaryOperator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mult"/>
+        <Class IRI="#BinaryOperator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NameContentType"/>
+        <Class IRI="#SimpleType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#None"/>
+        <Class IRI="#NameContentType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nonlocal"/>
+        <Class IRI="#OtherStatement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Not"/>
+        <Class IRI="#UnaryOperator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NotEq"/>
+        <Class IRI="#CompanionExpression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NotIn"/>
+        <Class IRI="#CompanionExpression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NumberType"/>
+        <Class IRI="#SimpleType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Or"/>
+        <Class IRI="#BooleanExpression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OtherExpression"/>
+        <Class IRI="#Expression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OtherStatement"/>
+        <Class IRI="#Statement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pass"/>
+        <Class IRI="#OtherStatement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pow"/>
+        <Class IRI="#BinaryOperator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PythonLanguage"/>
+        <Class IRI="#Python"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Raise"/>
+        <Class IRI="#ExceptionHandlingStatement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Return"/>
+        <Class IRI="#JumpStatement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rshift"/>
+        <Class IRI="#BitShiftExpression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SelectionStatement"/>
+        <Class IRI="#Statement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Set"/>
+        <Class IRI="#CollectionType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SetComp"/>
+        <Class IRI="#ComprehensionExpression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SimpleType"/>
+        <Class IRI="#BuiltInType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Slice"/>
+        <Class IRI="#SubscriptExpression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Starred"/>
+        <Class IRI="#OtherExpression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Statement"/>
+        <Class IRI="#PythonLanguage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Str"/>
+        <Class IRI="#SimpleType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sub"/>
+        <Class IRI="#BinaryOperator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SubscriptExpression"/>
+        <Class IRI="#Expression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#True"/>
+        <Class IRI="#BooleanType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Try"/>
+        <Class IRI="#ExceptionHandlingStatement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tuple"/>
+        <Class IRI="#CollectionType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UAdd"/>
+        <Class IRI="#UnaryOperator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#USub"/>
+        <Class IRI="#UnaryOperator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UnaryOperator"/>
+        <Class IRI="#ArithmeticExpression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Value"/>
+        <Class IRI="#Data"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#While"/>
+        <Class IRI="#IterationStatement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#With"/>
+        <Class IRI="#OtherStatement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Yield"/>
+        <Class IRI="#GeneratorExpression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#YieldFrom"/>
+        <Class IRI="#GeneratorExpression"/>
+    </SubClassOf>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+

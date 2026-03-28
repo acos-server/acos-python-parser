@@ -1,0 +1,13 @@
+pcex-python-code/
+readingmirror-data-files/
+chap*/
+*.csv
+pcex/
+parsons/
+quizpet/
+py-files
+temp_code/
+*.json
+*.pyc
+*/__pycache__/*
+__pycache__

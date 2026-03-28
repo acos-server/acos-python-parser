@@ -1,0 +1,2351 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#"
+     xml:base="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#AccessingDictionary -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#AccessingDictionary">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingDictionary"/>
+        <rdfs:comment>AccessingDictionary includes any operation that retrieves values from a dictionary, including direct indexing (dict[key]) and methods like .get(), .items(), .keys(), and .values().)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#AddingItemToDictionary -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#AddingItemToDictionary">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingDictionary"/>
+        <rdfs:comment>Referes to the expression dictionary[‘new_key&apos; ]= value</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#AddingListElement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#AddingListElement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingList"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#AddingListElementWithAppend -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#AddingListElementWithAppend">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#AddingListElement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#AddingListElementWithInsert -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#AddingListElementWithInsert">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#AddingListElement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Addition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Addition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ArithmeticOperation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#AlgorithmImplementation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#AlgorithmImplementation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ComplexConstruct"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ArithmeticExpression -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ArithmeticExpression">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ArithmeticOperation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ArithmeticOperation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#EducationalPython"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ArtithmeticOperator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ArtithmeticOperator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Operator"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#AssertChecking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#AssertChecking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#CheckingCondition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#AssertStatement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#AssertStatement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ExceptionHandlingStatement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#AssertionError -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#AssertionError">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Error"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#AssigningValueVariable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#AssigningValueVariable">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ManagingVariable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#AssignmentStatement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#AssignmentStatement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Statement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#AugmentedAssignmentStatement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#AugmentedAssignmentStatement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#AssignmentStatement"/>
+        <rdfs:comment>An augmented assignment statement is += 1</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#BinaryOperation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#BinaryOperation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ArithmeticExpression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#BinaryTree -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#BinaryTree">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ComplexConstruct"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#BinaryTreeTask -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#BinaryTreeTask">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingAdvancedDataStructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#BooleanEvaluating -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#BooleanEvaluating">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#CheckingCondition"/>
+        <rdfs:comment>Evaluating boolean expressions</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#BooleanExpression -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#BooleanExpression">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#LogicalExpression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#BooleanLiteral -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#BooleanLiteral">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Literal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#BreakStatement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#BreakStatement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#JumpStatement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#BuiltInFunction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#BuiltInFunction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Python"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Call -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Call">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#CallingFunctionCallingFunction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#CallingFunctionCallingFunction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingFunctionCallingFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#CallingLibraryFunction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#CallingLibraryFunction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingFunction"/>
+        <rdfs:comment>CallingFunctionLibrary refers to ANY use of built-in Python functions (print, len, replace, etc.) and built-in methods of objects (like list.append() or string.replace(), etc.).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#CallingNestedFunction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#CallingNestedFunction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingNestedFunction"/>
+        <rdfs:comment>CallingNestedFunction refers to the call of functions that have in their code the definition of other user-defined functions</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#CallingObjectMethod -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#CallingObjectMethod">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingObjectOrientedProgramming"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#CallingRecursiveFunction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#CallingRecursiveFunction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingRecursiveFunction"/>
+        <rdfs:comment>CallingRecursiveFunction refers to calling a function that calls itself (recursion)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#CallingSimpleFunction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#CallingSimpleFunction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingSimpleFunction"/>
+        <rdfs:comment>CallingStandardFunction refers to calling a function that meets all the 3 following criteria:1) Does not call any other user-defined functions 2) Is not nested inside another function 3) Does not call itself (not recursive) Note: A standard function may still call built-in functions.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#CapitalizeString -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#CapitalizeString">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ModifyingStringCase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ChangingValue2DArrayElement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ChangingValue2DArrayElement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#TwoDimensionalArrayTask"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ChangingValueDictionaryElement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ChangingValueDictionaryElement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingDictionary"/>
+        <rdfs:comment>refers to using the expression dictionary[old_key]= value</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ChangingValueListElement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ChangingValueListElement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingList"/>
+        <rdfs:comment>list[index]= value</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ChangingValueVariable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ChangingValueVariable">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ManagingVariable"/>
+        <rdfs:comment>UpdatingVariable refers to when a variable that was already assigned to a value is update (e.g. x+=1 or x=x+1)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#CheckingCondition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#CheckingCondition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#EducationalPython"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#CheckingForItem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#CheckingForItem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#EducationalPython"/>
+        <rdfs:comment>check for item with the &apos;in&apos; construct</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#CheckingInForLoop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#CheckingInForLoop">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#CheckingCondition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#CheckingInWhileLoop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#CheckingInWhileLoop">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#CheckingCondition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#CircularQueue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#CircularQueue">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Queue"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ClassDefinition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ClassDefinition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#DefinitionStatement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ClassMethod -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ClassMethod">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Method"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ClosingFile -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ClosingFile">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingFile"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ComparisonExpression -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ComparisonExpression">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#LogicalExpression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ComparisonOperator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ComparisonOperator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Operator"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ComplexConstruct -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ComplexConstruct"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Concatenation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Concatenation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#EducationalPython"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ConditionalStatement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ConditionalStatement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Statement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ContinueStatement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ContinueStatement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#JumpStatement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ConvertStringToLowerCase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ConvertStringToLowerCase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ModifyingStringCase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ConvertStringToUpperCase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ConvertStringToUpperCase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ModifyingStringCase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Creating2DArray -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Creating2DArray">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#TwoDimensionalArrayTask"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#CreatingDictionary -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#CreatingDictionary">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingDictionary"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#CreatingList -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#CreatingList">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingList"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#CreatingObject -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#CreatingObject">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingObjectOrientedProgramming"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#CreatingString -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#CreatingString">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingString"/>
+        <rdfs:comment>str()</rdfs:comment>
+        <rdfs:comment>string = &quot;&quot;</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#CreatingTuple -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#CreatingTuple">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingTuple"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#DataTypeSpecificTask -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#DataTypeSpecificTask">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#EducationalPython"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#DefiningClass -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#DefiningClass">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingObjectOrientedProgramming"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#DefiningFunctionCallingFunction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#DefiningFunctionCallingFunction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingFunctionCallingFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#DefiningNestedFunction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#DefiningNestedFunction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingNestedFunction"/>
+        <rdfs:comment>DefiningNestedFunction refers to defining a function inside another user-defined function.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#DefiningObjectMethod -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#DefiningObjectMethod">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingObjectOrientedProgramming"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#DefiningRecursiveFunction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#DefiningRecursiveFunction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingRecursiveFunction"/>
+        <rdfs:comment>DefiningRecursiveFunction refers to defining a function that calls itself within its own body (recursion).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#DefiningSimpleFunction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#DefiningSimpleFunction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingSimpleFunction"/>
+        <rdfs:comment>DefiningSimpleFunction refers to defining a function that: 1) Does not call any other user-defined functions 2) Is not nested inside another function 3) Does not call itself (not recursive) Note: A standard function may still call built-in functions. Additionally, DefiningSimpleFunction can still be later called in nested patterns (NestedFunctionCall).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#DefinitionStatement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#DefinitionStatement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Statement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#DeletingListElement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#DeletingListElement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingList"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#DictLiteral -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#DictLiteral">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#LiteralCollection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#DictionaryMethod -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#DictionaryMethod">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Method"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Division -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Division">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ArithmeticOperation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#EducationalPython -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#EducationalPython"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Error -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Error">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Exception"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Exception -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Exception">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Python"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ExceptionHandlingStatement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ExceptionHandlingStatement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Statement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Expression -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Expression">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Python"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ExpressionStatement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ExpressionStatement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Statement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#File -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#File"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#FileMethod -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#FileMethod">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Method"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#FileNotFoundError -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#FileNotFoundError">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Error"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#FindAbsolute -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#FindAbsolute">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ArithmeticOperation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#FindMaximum -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#FindMaximum">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ArithmeticOperation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#FindMinimum -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#FindMinimum">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ArithmeticOperation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#FindRemainder -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#FindRemainder">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ArithmeticOperation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#FindingLength -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#FindingLength">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#EducationalPython"/>
+        <rdfs:comment>refers to the expression len()</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#FloatLiteral -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#FloatLiteral">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#NumericLiteral"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ForLoopWithListIndexing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ForLoopWithListIndexing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ForLoopWithUpdate"/>
+        <rdfs:comment>ForLoopWithListIndexing refers to when there is an indexing of a list happening inside a for  loop</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ForLoopWithUpdate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ForLoopWithUpdate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Iteration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ForStatement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ForStatement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#IterationStatement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#FormattingString -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#FormattingString">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingString"/>
+        <rdfs:comment>f string</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#FunctionCall -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#FunctionCall">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Call"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#FunctionDefinition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#FunctionDefinition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#DefinitionStatement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingAdvancedDataStructure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingAdvancedDataStructure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#EducationalPython"/>
+        <rdfs:comment>These data structure as they are not inherent to Python need to be evaluated separately</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingDictionary -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingDictionary">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#DataTypeSpecificTask"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingError -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingError">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#EducationalPython"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingFile -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingFile">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#DataTypeSpecificTask"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingFloat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingFloat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#DataTypeSpecificTask"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingFunction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingFunction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#EducationalPython"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingFunctionCallingFunction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingFunctionCallingFunction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingGeneralError -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingGeneralError">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingError"/>
+        <rdfs:comment>Using try and except block as &quot;except Exception as e:&quot;</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingInput -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingInput">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#EducationalPython"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingInteger -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingInteger">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#DataTypeSpecificTask"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingList -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingList">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#DataTypeSpecificTask"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingNestedFunction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingNestedFunction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingObjectOrientedProgramming -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingObjectOrientedProgramming">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#EducationalPython"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingRecursiveFunction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingRecursiveFunction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingSimpleFunction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingSimpleFunction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingSpecificError -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingSpecificError">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingError"/>
+        <rdfs:comment>Using try and except block with the specific error</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingString -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingString">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#DataTypeSpecificTask"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingTuple -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingTuple">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#DataTypeSpecificTask"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#IOError -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#IOError">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Error"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#IfChecking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#IfChecking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#CheckingCondition"/>
+        <rdfs:comment>IfChecking refers to an if statement which is not placed inside any loop</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#IfCheckingInForLoop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#IfCheckingInForLoop">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#CheckingInForLoop"/>
+        <rdfs:comment>IfCheckingInForLoop refers to an if statement inside a for loop</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#IfCheckingInWhileLoop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#IfCheckingInWhileLoop">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#CheckingInWhileLoop"/>
+        <rdfs:comment>IfCheckingInWhileLoop refers to an if statement inside a while loop</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#IfElifChecking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#IfElifChecking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#CheckingCondition"/>
+        <rdfs:comment>IfElifChecking refers to an if-elif statement which is not placed inside any loop</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#IfElifCheckingInForLoop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#IfElifCheckingInForLoop">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#CheckingInForLoop"/>
+        <rdfs:comment>IfElifCheckingInForLoop refers to an if-elif statement inside a for loop</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#IfElifCheckingInWhileLoop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#IfElifCheckingInWhileLoop">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#CheckingInWhileLoop"/>
+        <rdfs:comment>IfElifCheckingInWhileLoop refers to an if-elif statement inside a while loop</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#IfElifElseChecking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#IfElifElseChecking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#CheckingCondition"/>
+        <rdfs:comment>IfElifElseChecking refers to an if-elif-else statement which is not placed inside any loop</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#IfElifElseCheckingInForLoop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#IfElifElseCheckingInForLoop">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#CheckingInForLoop"/>
+        <rdfs:comment>IfElifElseCheckingInForLoop refers to an if-elif-else statement inside a for loop</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#IfElifElseCheckingInWhileLoop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#IfElifElseCheckingInWhileLoop">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#CheckingInWhileLoop"/>
+        <rdfs:comment>IfElifElseCheckingInWhileLoop refers to an if-elif-else statement inside a while loop</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#IfElifElseStatement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#IfElifElseStatement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ConditionalStatement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#IfElifStatement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#IfElifStatement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ConditionalStatement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#IfElseChecking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#IfElseChecking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#CheckingCondition"/>
+        <rdfs:comment>IfElseChecking refers to an if-else statement which is not placed inside any loop</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#IfElseCheckingInForLoop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#IfElseCheckingInForLoop">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#CheckingInForLoop"/>
+        <rdfs:comment>IfElseCheckingInForLoop refers to an if-else statement inside a for loop</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#IfElseCheckingInWhileLoop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#IfElseCheckingInWhileLoop">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#CheckingInWhileLoop"/>
+        <rdfs:comment>IfElseCheckingInWhileLoop refers to an if-else statement inside a while loop</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#IfElseStatement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#IfElseStatement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ConditionalStatement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#IfInForLoop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#IfInForLoop">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#IfInLoop"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#IfInLoop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#IfInLoop">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ComplexConstruct"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#IfInWhileLoop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#IfInWhileLoop">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#IfInLoop"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#IfStatement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#IfStatement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ConditionalStatement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Import -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Import">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ImportStatement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ImportFrom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ImportFrom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ImportStatement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ImportStatement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ImportStatement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Statement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ImportedElement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ImportedElement"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Importing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Importing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#EducationalPython"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#IndexError -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#IndexError">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Error"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Indexing2DArray -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Indexing2DArray">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#TwoDimensionalArrayTask"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#IndexingDictionary -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#IndexingDictionary">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingDictionary"/>
+        <rdfs:comment>Refers to direct indexig with the expression dict[key]</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#IndexingExpression -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#IndexingExpression">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#SubscriptExpression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#IndexingList -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#IndexingList">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingList"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#IndexingString -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#IndexingString">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingString"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#IndexingTuple -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#IndexingTuple">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingTuple"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#IntegerLiteral -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#IntegerLiteral">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#NumericLiteral"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Iteration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Iteration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#EducationalPython"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#IterationStatement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#IterationStatement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Statement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#JumpStatement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#JumpStatement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Statement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Larger -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Larger">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ComparisonOperator"/>
+        <rdfs:comment>&gt;</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#LargerOrEqual -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#LargerOrEqual">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ComparisonOperator"/>
+        <rdfs:comment>&gt;=</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Less -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Less">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ComparisonOperator"/>
+        <rdfs:comment>&lt;</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#LessOrEqual -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#LessOrEqual">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ComparisonOperator"/>
+        <rdfs:comment>&lt;=</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Library -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Library">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ImportedElement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#LinkedList -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#LinkedList">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ComplexConstruct"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#LinkedListTask -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#LinkedListTask">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingAdvancedDataStructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ListLiteral -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ListLiteral">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#LiteralCollection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ListMethod -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ListMethod">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Method"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ListReferencing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ListReferencing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingList"/>
+        <rdfs:comment>ListReferencing refers to the code in which one list is set equal to another, and a change to one of the lists causes the same change in the other list. ListReferencing should only be marked as present if a list is explicitly assigned to another list variable (e.g., list2 = list1).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Literal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Literal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#LiteralCollection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#LiteralCollection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Literal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#LogicalExpression -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#LogicalExpression">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#LogicalOperator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#LogicalOperator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Operator"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ManagingVariable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ManagingVariable">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#EducationalPython"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#MembershipOperator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#MembershipOperator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Operator"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Method -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Method">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Python"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#MixedNestedLoop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#MixedNestedLoop">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#NestedLoop"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#MixedNestedLoopIteration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#MixedNestedLoopIteration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#NestedLoopIteration"/>
+        <rdfs:comment>MixedNestedLoopIteration refers to nested loop such that a while-loop inside a for-loop or a for-loop inside a while-loop</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ModifyingStringCase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ModifyingStringCase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingString"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Modulus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Modulus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ArtithmeticOperator"/>
+        <rdfs:comment>same as %</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Multiplication -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Multiplication">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ArithmeticOperation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#NestedForLoop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#NestedForLoop">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#NestedLoop"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#NestedForLoopIteration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#NestedForLoopIteration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#NestedLoopIteration"/>
+        <rdfs:comment>NestedForLoopIteration refers to nested loop such that  a for-loop is inside another for-loop</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#NestedFunction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#NestedFunction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ComplexConstruct"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#NestedFunctionCall -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#NestedFunctionCall">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingFunction"/>
+        <rdfs:comment>NestedFunctionCall refers to when one function call is placed as an argument to another function call (e.g., f(g(x)))</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#NestedIf -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#NestedIf">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ComplexConstruct"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#NestedIfChecking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#NestedIfChecking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#CheckingCondition"/>
+        <rdfs:comment>Nested If Checking refers to having an if, elif, or else block inside another if, elif, or else block.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#NestedLoop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#NestedLoop">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ComplexConstruct"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#NestedLoopIteration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#NestedLoopIteration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Iteration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#NestedWhileLoop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#NestedWhileLoop">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#NestedLoop"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#NestedWhileLoopIteration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#NestedWhileLoopIteration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#NestedLoopIteration"/>
+        <rdfs:comment>NestedWhileLoopIteration refers to nested loop such that a while-loop is inside another while-loop</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#NoneLiteral -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#NoneLiteral">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Literal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#NotEqual -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#NotEqual">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ComparisonOperator"/>
+        <rdfs:comment>!=</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#NumericLiteral -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#NumericLiteral">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Literal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#OSError -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#OSError">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Error"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#OpeningFile -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#OpeningFile">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingFile"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Operator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Operator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Python"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#PassStatement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#PassStatement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#JumpStatement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Power -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Power">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ArithmeticOperation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Printing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Printing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#EducationalPython"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Python -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Python">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#PythonFiles -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#PythonFiles">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ImportedElement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Queue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Queue">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ComplexConstruct"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#QueueTask -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#QueueTask">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingAdvancedDataStructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#RaiseStatement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#RaiseStatement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ExceptionHandlingStatement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ReadingLine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ReadingLine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingFile"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#RecursiveFunction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#RecursiveFunction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ComplexConstruct"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ReplacingStringContent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ReplacingStringContent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingString"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ReturnStatement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ReturnStatement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#JumpStatement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ReversingList -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ReversingList">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingList"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Round -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Round">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ArithmeticOperation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#SetLiteral -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#SetLiteral">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#LiteralCollection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#SimpleAssignmentStatement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#SimpleAssignmentStatement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#AssignmentStatement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#SingleForLoopIteration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#SingleForLoopIteration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Iteration"/>
+        <rdfs:comment>SingleForLoopIteration refers to a single use use of a for-loop that has no nested structure
+When identifying nested loop structures, classify the entire structure under the appropriate nested loop category only (e.g., NestedForLoopIteration). Do not also include the single-loop categories for the outer loop</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#SingleWhileLoopIteration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#SingleWhileLoopIteration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Iteration"/>
+        <rdfs:comment>SingleWhileLoopIteration refers to a single use of a while-loop that has no nested structure
+When identifying nested loop structures, classify the entire structure under the appropriate nested loop category only (e.g., NestedWhileLoopIteration). Do not also include the single-loop categories for the outer loop</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#SlicingExpression -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#SlicingExpression">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#SubscriptExpression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#SlicingList -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#SlicingList">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingList"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#SlicingString -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#SlicingString">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingString"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#SlicingTuple -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#SlicingTuple">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingTuple"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#SplittingString -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#SplittingString">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingString"/>
+        <rdfs:comment>.split() or rsplit()</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Stack -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Stack">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ComplexConstruct"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#StackTask -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#StackTask">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingAdvancedDataStructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Statement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Statement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Python"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#StringLiteral -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#StringLiteral">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Literal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#StringMethod -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#StringMethod">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Method"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#SubscriptExpression -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#SubscriptExpression">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Subtraction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Subtraction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ArithmeticOperation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#SwappingValueVariables -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#SwappingValueVariables">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ManagingVariable"/>
+        <rdfs:comment>Refers to when variables are swapped (e.g. 
+temp =a
+a=b
+b=temp
+)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ThreeStepValueSwap -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ThreeStepValueSwap">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ComplexConstruct"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#TransformingToFloatType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#TransformingToFloatType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingFloat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#TransformingToIntType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#TransformingToIntType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingInteger"/>
+        <rdfs:comment>float()
+int()</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#TransformingToStringType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#TransformingToStringType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingString"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#TrimmingString -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#TrimmingString">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingString"/>
+        <rdfs:comment>strip() or rstrip()</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#TryStatement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#TryStatement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ExceptionHandlingStatement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#TupleLiteral -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#TupleLiteral">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#LiteralCollection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#TwoDimensionalArray -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#TwoDimensionalArray">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ComplexConstruct"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#TwoDimensionalArrayTask -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#TwoDimensionalArrayTask">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#HandlingAdvancedDataStructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#TypeError -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#TypeError">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Error"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#UnaryOperation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#UnaryOperation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ArithmeticExpression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ValueError -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ValueError">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Error"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#WhileLoopWithListIndexing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#WhileLoopWithListIndexing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#WhileLoopWithUpdate"/>
+        <rdfs:comment>WhileLoopWithListIndexing refers to when there is an indexing of a list happening inside a while loop</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#WhileLoopWithUpdate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#WhileLoopWithUpdate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Iteration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#WhileStatement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#WhileStatement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#IterationStatement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#and -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#and">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#LogicalOperator"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#in -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#in">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#MembershipOperator"/>
+        <rdfs:comment>maybe delete this one actually</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#math -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#math">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Library"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#not -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#not">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#LogicalOperator"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#or -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#or">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#LogicalOperator"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#* -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#*">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ArtithmeticOperator"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#** -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#**">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ArtithmeticOperator"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#+ -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#+">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ArtithmeticOperator"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#- -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#-">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ArtithmeticOperator"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#/ -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#/">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ArtithmeticOperator"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#// -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#//">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ArtithmeticOperator"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#= -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#=">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#Operator"/>
+        <rdfs:comment>=</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#== -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#==">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ComparisonOperator"/>
+        <rdfs:comment>==</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ForLoopWith*= -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ForLoopWith*=">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ForLoopWithUpdate"/>
+        <rdfs:comment>ForLoopWith*= refers to when there is an update of a variable with the multiplication sign inside a for loop</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ForLoopWith+= -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ForLoopWith+=">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ForLoopWithUpdate"/>
+        <rdfs:comment>ForLoopWith+= refers to when there is an update of a variable with the addition sign inside a for loop</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#WhileLoopWith*= -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#WhileLoopWith*=">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#WhileLoopWithUpdate"/>
+        <rdfs:comment>WhileLoopWith*= refers to when there is an update of a variable with the multiplication sign inside a while loop</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#WhileLoopWith+= -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#WhileLoopWith+=">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#WhileLoopWithUpdate"/>
+        <rdfs:comment>WhileLoopWith+= refers to when there is an update of a variable with the addition sign inside a while loop</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#__init()__ -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#__init()__">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ClassMethod"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#abs() -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#abs()">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#BuiltInFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#append() -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#append()">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ListMethod"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#capitalize() -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#capitalize()">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#StringMethod"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#close() -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#close()">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#FileMethod"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#dict() -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#dict()">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#BuiltInFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#float() -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#float()">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#BuiltInFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#format() -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#format()">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#StringMethod"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#get() -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#get()">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#DictionaryMethod"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#input() -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#input()">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#BuiltInFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#insert() -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#insert()">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ListMethod"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#int() -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#int()">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#BuiltInFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#items() -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#items()">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#DictionaryMethod"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#join() -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#join()">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#StringMethod"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#keys() -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#keys()">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#DictionaryMethod"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#len() -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#len()">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#BuiltInFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#list() -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#list()">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#BuiltInFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#lower() -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#lower()">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#StringMethod"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#max() -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#max()">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#BuiltInFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#min() -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#min()">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#BuiltInFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#next() -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#next()">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#BuiltInFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#open() -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#open()">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#BuiltInFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#pop() -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#pop()">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ListMethod"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#print() -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#print()">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#BuiltInFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#range() -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#range()">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#BuiltInFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#read() -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#read()">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#FileMethod"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#readline() -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#readline()">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#FileMethod"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#remove() -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#remove()">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ListMethod"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#replace() -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#replace()">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#StringMethod"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#reverse() -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#reverse()">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#ListMethod"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#round() -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#round()">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#BuiltInFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#rstrip() -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#rstrip()">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#StringMethod"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#set() -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#set()">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#BuiltInFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#split() -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#split()">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#StringMethod"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#str() -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#str()">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#BuiltInFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#tuple() -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#tuple()">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#BuiltInFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#values() -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#values()">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alicemicheli/ontologies/2024/11/alice_thesis_1#DictionaryMethod"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.13) https://github.com/owlcs/owlapi -->
+
